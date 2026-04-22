@@ -1,17 +1,18 @@
 package com.example.policee.service;
 
-import com.example.police.dao.entity.UserEntity;
-import com.example.police.dao.repository.UserRepository;
-import com.example.police.dto.request.OtpSendDto;
-import com.example.police.dto.request.OtpVerifyRequestDto;
-import com.example.police.dto.request.UserLoginRequestDto;
-import com.example.police.dto.request.UserRegisterRequestDto;
-import com.example.police.dto.response.TokenResponseDto;
-import com.example.police.mapper.UserMapper;
-import com.example.police.util.config.JwtService;
-import com.example.police.util.enums.Status;
-import com.example.police.util.exceptions.UserNotFoundException;
-import com.example.police.util.exceptions.userAlreadyExist;
+
+import com.example.policee.dao.entity.UserEntity;
+import com.example.policee.dao.repository.UserRepository;
+import com.example.policee.dto.request.OtpSendDto;
+import com.example.policee.dto.request.OtpVerifyRequestDto;
+import com.example.policee.dto.request.UserLoginRequestDto;
+import com.example.policee.dto.request.UserRegisterRequestDto;
+import com.example.policee.dto.response.TokenResponseDto;
+import com.example.policee.mapper.UserMapper;
+import com.example.policee.util.config.config.JwtService;
+import com.example.policee.util.config.enums.Status;
+import com.example.policee.util.config.exception.UserNotFoundException;
+import com.example.policee.util.config.exception.userAlreadyExist;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

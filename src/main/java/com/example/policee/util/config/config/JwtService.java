@@ -1,6 +1,6 @@
 package com.example.policee.util.config.config;
 
-import com.example.police.dao.entity.UserEntity;
+import com.example.policee.dao.entity.UserEntity;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
