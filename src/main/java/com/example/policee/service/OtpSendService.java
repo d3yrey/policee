@@ -1,15 +1,15 @@
 package com.example.policee.service;
 
-import com.example.police.dao.entity.UserEntity;
-import com.example.police.dao.repository.UserRepository;
-import com.example.police.dto.request.OtpSendDto;
-import com.example.police.dto.request.OtpVerifyRequestDto;
-import com.example.police.dto.response.OtpResDto;
-import com.example.police.util.enums.Status;
-import com.example.police.util.exceptions.OtpCodeIsNotCorrectException;
-import com.example.police.util.exceptions.UserBlockaException;
-import com.example.police.util.exceptions.UserNotFoundException;
-import com.example.police.util.helper.EmailCodeCreater;
+
+import com.example.policee.dao.entity.UserEntity;
+import com.example.policee.dao.repository.UserRepository;
+import com.example.policee.dto.request.OtpSendDto;
+import com.example.policee.dto.request.OtpVerifyRequestDto;
+import com.example.policee.dto.response.OtpResDto;
+import com.example.policee.util.config.enums.Status;
+import com.example.policee.util.config.exception.OtpCodeIsNotCorrectException;
+import com.example.policee.util.config.exception.UserBlockaException;
+import com.example.policee.util.config.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
