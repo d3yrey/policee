@@ -1,3 +1,29 @@
 spring:
-  application:
-    name: policee
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 587
+    username: 4c251d2bd0a0b1
+    password: 67e6b26e6beced
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret: 635166546A576E5A7234753778214125442A472D4B6150645267556B58703273
+  access-expiration: 86400000  # 24 saat
+  refresh-expiration: 604800000 # 7 gün
+
+server:
+  port: 8082
